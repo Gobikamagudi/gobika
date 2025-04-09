@@ -1,0 +1,28 @@
+.grid-view{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    align-items:center;
+    gap: 40px;
+    margin:20px;
+    
+}
+.student{
+    border: 2px solid black;
+    padding:10px;
+    width:300px;
+    cursor: pointer;
+    background-color: rgb(212, 144, 43);
+    color: black;
+}
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
